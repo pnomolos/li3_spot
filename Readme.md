@@ -56,3 +56,7 @@ Models should be extended from
 ```php
 \li3_spot\models\Model
 ```
+
+[lithium]: http://lithify.me
+[spot]: https://github.com/vlucas/Spot/
+[license]: http://www.opensource.org/licenses/bsd-license.php
