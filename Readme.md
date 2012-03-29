@@ -39,7 +39,7 @@ setting):
 ```php
 Connections::add('default', array(
 	'type' => 'Spot',
-	'driver' => 'pdo_mysql',
+	'driver' => 'mysql',
 	'host' => 'localhost',
 	'user' => 'root',
 	'password' => 'password',
