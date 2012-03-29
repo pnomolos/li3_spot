@@ -2,7 +2,7 @@
 /**
  * Lithium: the most rad php framework
  *
- * @copyright	  Copyright 2012, Mariano Iglesias (http://marianoiglesias.com.ar)
+ * @copyright	  Copyright 2012, Phil Schalm (http://github.com/pnomolos)
  * @license		  http://opensource.org/licenses/bsd-license.php The BSD License
  */
 
