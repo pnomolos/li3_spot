@@ -70,14 +70,6 @@ abstract class Model extends \Spot\Entity {
 		return self::getMapper();
 	}
 	
-	public function exists() {
-		return $this->_data[self::mapper()->primaryKeyField($this->model())];
-	}
-	
-	public function model() {
-		return get_class($this);
-	}
-	
 	public function data($data = null, $modified = true) {
 		if (is_object($data) || is_array($data) || !$data || null === $data) {
 			return parent::data($data, $modified);
@@ -109,6 +101,12 @@ abstract class Model extends \Spot\Entity {
 			return false;
 		}
 		return true;
+	}
+	
+	public function __call($key, $args = null) {
+		if ($this->$key) {
+			return $this->$key;
+		} 
 	}
 // 
 //    *

@@ -76,6 +76,6 @@ interface IModel {
 	 * @param string $value Value to set.
 	 * @return mixed Either the `$this->_errors` array, or single value from it.
 	 */
-	public function errors($field = null, $value = null);
+	// public function errors($field = null, $value = null);
 }
 ?>
