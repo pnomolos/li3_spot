@@ -45,11 +45,11 @@ class Spot extends \lithium\core\Object {
 			'host' => 'localhost',
 			'login' => 'root',
 			'password' => '',
-			'database' => 'new-simplex',
+			'database' => 'lithium',
 			'port' => null
 		);
 		
-		$config = array_intersect_key($defaults, array_merge($defaults, $config));
+		$config = array_intersect_key(array_merge($defaults, $config), $defaults);
 		extract($config);
 		
 		$this->connectionString = 
