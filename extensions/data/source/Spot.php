@@ -49,7 +49,7 @@ class Spot extends \lithium\core\Object {
 			'port' => null
 		);
 		
-		$config = array_intersect_key(array_merge($defaults, $config), $defaults);
+		$config = $config + $defaults;
 		extract($config);
 		
 		$this->connectionString = 
