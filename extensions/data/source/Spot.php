@@ -72,13 +72,5 @@ class Spot extends \lithium\core\Object {
 	
 	public function getMapper() {
 		return $this->mapper;
-	}
-	
-	public function configureClass($class) {
-		return array('meta' => array(
-			'key' => 'id',
-			'locked' => true
-		));
-	}
-}
+	}}
 ?>
