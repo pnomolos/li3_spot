@@ -67,6 +67,9 @@ class Spot extends \lithium\core\Object {
 	protected function _init() {
 		$this->configuration = new \Spot\Config();
 		$this->configuration->addConnection('default', $this->connectionString);
+		
+		$this->configuration->typeHandler('serialized', '\li3_spot\types\Serialized');
+		
 		$this->mapper = new \Spot\Mapper($this->configuration);
 	}
 	
