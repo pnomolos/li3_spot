@@ -108,6 +108,10 @@ abstract class Model extends \Spot\Entity {
 			return $this->$key;
 		} 
 	}
+	
+	public static function first($options) {
+		return static::mapper()->first(get_called_class(), (isset($options['conditions']) ? $options['conditions'] : array()));
+	}
 // 
 //    *
 // 	 * Allows several properties to be assigned at once, i.e.:
