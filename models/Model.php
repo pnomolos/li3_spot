@@ -74,7 +74,7 @@ abstract class Model extends \Spot\Entity {
 		if (is_object($data) || is_array($data) || !$data || null === $data) {
 			return parent::data($data, $modified);
 		} else {
-			return $this->$data;
+			return isset($this->$data) ? $this->$data : null;
 		}
 	}
 	
